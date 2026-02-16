@@ -39,9 +39,28 @@ Looker Studio나 Google Data Studio의 **코드 기반 대안**으로, Google Sh
 ### 1. 클론 및 설치
 
 ```bash
-git clone https://github.com/citizendev9c/googlesheet-dashboard-starterkit.git
-cd googlesheet-dashboard-starterkit
+git clone https://github.com/citizendev9c/googlesheet-dashboard-starterkit.git my-project-name
+cd my-project-name
 npm install
+```
+
+> 💡 `my-project-name` 부분을 원하는 프로젝트 이름으로 바꾸세요. 해당 이름의 폴더가 생성됩니다.
+
+클론 후 `package.json`의 `name`을 프로젝트 이름에 맞게 수정합니다:
+
+```json
+{
+  "name": "my-project-name"
+}
+```
+
+원본 스타터킷 저장소와의 연결을 끊고 새 Git 저장소로 시작하려면:
+
+```bash
+rm -rf .git
+git init
+git add .
+git commit -m "init: 스타터킷에서 시작"
 ```
 
 ### 2. 환경변수 설정
