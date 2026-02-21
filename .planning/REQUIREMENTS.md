@@ -10,8 +10,8 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Data Foundation
 
 - [ ] **DATA-01**: 시스템이 Google Sheets 3개 시트(A반, B반, C반)에서 성적 데이터를 페칭할 수 있다
-- [ ] **DATA-02**: 시스템이 3행 병합 헤더 구조를 정확히 파싱하여 각 열을 올바른 항목에 매핑할 수 있다
-- [ ] **DATA-03**: 시스템이 학생 이름을 데이터 레이어에서 익명 처리(김*훈 형태)하여 원본 이름이 클라이언트에 전달되지 않는다
+- [x] **DATA-02**: 시스템이 3행 병합 헤더 구조를 정확히 파싱하여 각 열을 올바른 항목에 매핑할 수 있다
+- [x] **DATA-03**: 시스템이 학생 이름을 데이터 레이어에서 익명 처리(김*훈 형태)하여 원본 이름이 클라이언트에 전달되지 않는다
 - [ ] **DATA-04**: Google Sheets 연결 실패 시 시스템이 목 데이터로 폴백하며, 목 데이터임을 명확히 표시한다
 
 ### Dashboard Overview
@@ -71,8 +71,8 @@ Requirements for initial release. Each maps to roadmap phases.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | DATA-01 | Phase 1 | Pending |
-| DATA-02 | Phase 1 | Pending |
-| DATA-03 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Complete |
+| DATA-03 | Phase 1 | Complete |
 | DATA-04 | Phase 1 | Pending |
 | DASH-01 | Phase 2 | Pending |
 | DASH-02 | Phase 2 | Pending |

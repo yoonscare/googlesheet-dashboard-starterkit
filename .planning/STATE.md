@@ -10,27 +10,27 @@ See: .planning/PROJECT.md (updated 2026-02-22)
 ## Current Position
 
 Phase: 1 of 4 (Data Foundation)
-Plan: 0 of TBD in current phase
-Status: Context gathered, ready to plan
-Last activity: 2026-02-22 — Phase 1 context gathered
+Plan: 1 of 2 in current phase
+Status: In Progress — Plan 01 완료
+Last activity: 2026-02-22 — Plan 01 (타입 시스템 + 파서) 완료
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 10%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: -
-- Total execution time: 0 hours
+- Total plans completed: 1
+- Average duration: 2 min
+- Total execution time: 0.03 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-data-foundation | 1 | 2 min | 2 min |
 
 **Recent Trend:**
-- Last 5 plans: -
+- Last 5 plans: 2 min
 - Trend: -
 
 *Updated after each plan completion*
@@ -45,6 +45,9 @@ Recent decisions affecting current work:
 - [Init]: 기존 매출 대시보드 코드베이스를 성적 대시보드로 교체 (스택 유지, 데이터 레이어 교체)
 - [Init]: 학생 이름 데이터 파싱 시점에 익명화 — UI 레이어가 아닌 grade-parser.ts에서 처리
 - [Init]: Google Sheets 연결 실패 시 mock 폴백, dataSource 배너로 명시
+- [01-01]: totalScore = practiceTotal + attendance 직접 합산 — 시트 합계 열(AA)의 조정 열 영향 배제
+- [01-01]: COL 상수에 열 인덱스 검증 경고 추가 — AB/AC/AD 열 실측 필요
+- [01-01]: PO 임계값 85%/60% 적용 (CONTEXT.md 기준)
 
 ### Pending Todos
 
@@ -58,5 +61,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-22
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-data-foundation/01-CONTEXT.md
+Stopped at: Completed 01-01-PLAN.md (타입 시스템 + 파서)
+Resume file: .planning/phases/01-data-foundation/01-02-PLAN.md
