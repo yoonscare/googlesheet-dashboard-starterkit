@@ -28,7 +28,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. 3행 병합 헤더가 파싱되어 사전학습·보고서·실습교수·현장지도자·학습성과·출석·핵심간호술 점수가 각각 올바른 열에 매핑된다
   3. 화면에 표시되는 모든 학생 이름이 "김*훈" 형태로 익명 처리되어 있으며 원본 이름은 클라이언트에 전달되지 않는다
   4. Google Sheets 연결 실패 시 목 데이터로 표시되고 화면에 "목 데이터" 경고 배너가 표시된다
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — 학생 성적 타입 정의 + 열 인덱스 파서 + 익명화 함수
+- [ ] 01-02-PLAN.md — Mock 데이터 생성 + 3반 병렬 페칭 통합 레이어
 
 ### Phase 2: Core Dashboard
 **Goal**: 교수가 대시보드 첫 화면에서 전체 KPI, 반별 성적 분포, 상대평가 A 컷라인을 한눈에 파악할 수 있다
@@ -70,7 +73,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 0/TBD | Not started | - |
+| 1. Data Foundation | 0/2 | Planning complete | - |
 | 2. Core Dashboard | 0/TBD | Not started | - |
 | 3. Learning Outcomes | 0/TBD | Not started | - |
 | 4. Student Lookup and Class Comparison | 0/TBD | Not started | - |
