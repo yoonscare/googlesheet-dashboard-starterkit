@@ -77,16 +77,16 @@ Requirements for initial release. Each maps to roadmap phases.
 | DASH-01 | Phase 2 | Pending |
 | DASH-02 | Phase 2 | Pending |
 | DASH-03 | Phase 2 | Pending |
+| UI-01 | Phase 2 | Pending |
+| UI-02 | Phase 2 | Pending |
 | LO-01 | Phase 3 | Pending |
 | LO-02 | Phase 3 | Pending |
 | LO-03 | Phase 3 | Pending |
 | LO-04 | Phase 3 | Pending |
 | STUD-01 | Phase 4 | Pending |
 | STUD-02 | Phase 4 | Pending |
-| COMP-01 | Phase 5 | Pending |
-| COMP-02 | Phase 5 | Pending |
-| UI-01 | Phase 2 | Pending |
-| UI-02 | Phase 2 | Pending |
+| COMP-01 | Phase 4 | Pending |
+| COMP-02 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 17 total
@@ -95,4 +95,4 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ---
 *Requirements defined: 2026-02-22*
-*Last updated: 2026-02-22 after initial definition*
+*Last updated: 2026-02-22 — traceability updated to match 4-phase roadmap (COMP-01/02 moved from Phase 5 to Phase 4)*
