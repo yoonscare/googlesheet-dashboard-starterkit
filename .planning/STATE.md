@@ -10,28 +10,28 @@ See: .planning/PROJECT.md (updated 2026-02-22)
 ## Current Position
 
 Phase: 1 of 4 (Data Foundation)
-Plan: 1 of 2 in current phase
-Status: In Progress — Plan 01 완료
-Last activity: 2026-02-22 — Plan 01 (타입 시스템 + 파서) 완료
+Plan: 2 of 2 in current phase
+Status: Phase 1 완료 — Phase 2 진행 준비
+Last activity: 2026-02-22 — Plan 02 (Mock 데이터 + 통합 레이어) 완료
 
-Progress: [█░░░░░░░░░] 10%
+Progress: [██░░░░░░░░] 20%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 2 min
-- Total execution time: 0.03 hours
+- Total plans completed: 2
+- Average duration: 2.5 min
+- Total execution time: 0.08 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-data-foundation | 1 | 2 min | 2 min |
+| 01-data-foundation | 2 | 5 min | 2.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min
-- Trend: -
+- Last 5 plans: 2 min, 3 min
+- Trend: stable
 
 *Updated after each plan completion*
 
@@ -48,6 +48,9 @@ Recent decisions affecting current work:
 - [01-01]: totalScore = practiceTotal + attendance 직접 합산 — 시트 합계 열(AA)의 조정 열 영향 배제
 - [01-01]: COL 상수에 열 인덱스 검증 경고 추가 — AB/AC/AD 열 실측 필요
 - [01-01]: PO 임계값 85%/60% 적용 (CONTEXT.md 기준)
+- [01-02]: mockGradeData는 모듈 로드 시 1회 생성 — 매 호출마다 다른 데이터 생성 방지
+- [01-02]: parseClassRows 헬퍼로 usedMock 플래그 추적 — dataSource 결정 로직 명확화
+- [01-02]: DATA_RANGE = 'A4:AD' — 헤더 3행 제외, 4행부터 읽기
 
 ### Pending Todos
 
@@ -61,5 +64,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-22
-Stopped at: Completed 01-01-PLAN.md (타입 시스템 + 파서)
-Resume file: .planning/phases/01-data-foundation/01-02-PLAN.md
+Stopped at: Completed 01-02-PLAN.md (Mock 데이터 + 통합 레이어)
+Resume file: .planning/phases/02-ui-foundation/ (Phase 2 시작)

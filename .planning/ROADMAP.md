@@ -12,7 +12,7 @@
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Data Foundation** - Google Sheets 3반 파싱·익명화·폴백 데이터 레이어 구축
+- [x] **Phase 1: Data Foundation** - Google Sheets 3반 파싱·익명화·폴백 데이터 레이어 구축
 - [ ] **Phase 2: Core Dashboard** - KPI 요약·성적 분포 히스토그램·상대평가 40% 컷라인 뷰
 - [ ] **Phase 3: Learning Outcomes** - 학습성과 상/중/하 달성도 분석 (인증평가 핵심)
 - [ ] **Phase 4: Student Lookup and Class Comparison** - 학생 검색·순위 차트·반 간 비교·핵심간호술
@@ -30,8 +30,8 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Google Sheets 연결 실패 시 목 데이터로 폴백되며 `dataSource` 필드가 `'mock'`으로 설정된다 (UI 배너는 Phase 2에서 `dataSource` 값을 읽어 표시)
 **Plans**: 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — 학생 성적 타입 정의 + 열 인덱스 파서 + 익명화 함수
-- [ ] 01-02-PLAN.md — Mock 데이터 생성 + 3반 병렬 페칭 통합 레이어
+- [x] 01-01-PLAN.md — 학생 성적 타입 정의 + 열 인덱스 파서 + 익명화 함수
+- [x] 01-02-PLAN.md — Mock 데이터 생성 + 3반 병렬 페칭 통합 레이어
 
 ### Phase 2: Core Dashboard
 **Goal**: 교수가 대시보드 첫 화면에서 전체 KPI, 반별 성적 분포, 상대평가 A 컷라인을 한눈에 파악할 수 있다
@@ -74,7 +74,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 1/2 | In Progress|  |
+| 1. Data Foundation | 2/2 | Complete | 2026-02-22 |
 | 2. Core Dashboard | 0/TBD | Not started | - |
 | 3. Learning Outcomes | 0/TBD | Not started | - |
 | 4. Student Lookup and Class Comparison | 0/TBD | Not started | - |
