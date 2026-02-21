@@ -27,7 +27,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   1. 앱이 A반/B반/C반 시트에서 학생 데이터를 병렬로 페칭하여 화면에 학생 수가 표시된다
   2. 3행 병합 헤더가 파싱되어 사전학습·보고서·실습교수·현장지도자·학습성과·출석·핵심간호술 점수가 각각 올바른 열에 매핑된다
   3. 화면에 표시되는 모든 학생 이름이 "김*훈" 형태로 익명 처리되어 있으며 원본 이름은 클라이언트에 전달되지 않는다
-  4. Google Sheets 연결 실패 시 목 데이터로 표시되고 화면에 "목 데이터" 경고 배너가 표시된다
+  4. Google Sheets 연결 실패 시 목 데이터로 폴백되며 `dataSource` 필드가 `'mock'`으로 설정된다 (UI 배너는 Phase 2에서 `dataSource` 값을 읽어 표시)
 **Plans**: 2 plans
 Plans:
 - [ ] 01-01-PLAN.md — 학생 성적 타입 정의 + 열 인덱스 파서 + 익명화 함수
@@ -42,6 +42,7 @@ Plans:
   2. 반별 성적 분포 히스토그램에서 10점 단위 구간별 학생 수를 시각적으로 파악할 수 있다
   3. 반별 상위 40% 경계선이 히스토그램 또는 순위 차트에 "A 이상 40% 컷라인" 레이블과 함께 명확히 표시된다
   4. 다크모드/라이트모드 전환이 작동하며 데스크톱과 태블릿 화면에서 레이아웃이 깨지지 않는다
+  5. Google Sheets 연결 실패(dataSource가 'mock' 또는 'partial-mock')일 때 상단에 "목 데이터 사용 중" 경고 배너가 표시된다
 **Plans**: TBD
 
 ### Phase 3: Learning Outcomes
