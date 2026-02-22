@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-02-22)
 
 ## Current Position
 
-Phase: 2 of 4 (Core Dashboard)
-Plan: 1 of 2 in current phase
-Status: Phase 2 Plan 01 완료 — Plan 02 (히스토그램 차트) 진행 준비
-Last activity: 2026-02-22 — Plan 01 (KPI 카드 + Mock 배너) 완료
+Phase: 2 of 4 (Core Dashboard) — 완료
+Plan: 2 of 2 in current phase — Phase 2 완전 완료
+Status: Phase 2 완료 — Phase 3 (PO 달성도 분석) 진행 준비
+Last activity: 2026-02-22 — Plan 02 (히스토그램 차트 + dashboard 완성) 완료
 
-Progress: [███░░░░░░░] 30%
+Progress: [████░░░░░░] 40%
 
 ## Performance Metrics
 
@@ -28,10 +28,10 @@ Progress: [███░░░░░░░] 30%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-data-foundation | 2 | 5 min | 2.5 min |
-| 02-core-dashboard | 1 | 3 min | 3 min |
+| 02-core-dashboard | 2 | 5 min | 2.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min, 3 min, 3 min
+- Last 5 plans: 2 min, 3 min, 3 min, 2 min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -56,6 +56,9 @@ Recent decisions affecting current work:
 - [02-01]: 최고점/최저점 reduce 패턴으로 빈 배열 -Infinity/Infinity 방지
 - [02-01]: 반별 평균을 총 학생수 카드 description에 병합 — 카드 수 6개 유지
 - [02-01]: GradeKpiData 타입을 types/grades.ts에 추가 (기존 패턴 준수)
+- [Phase 02-02]: SCORE_RANGES 상수 배열로 구간 정의 — buildHistogramData()와 findCutlineRange() 동일 레이블 참조
+- [Phase 02-02]: 대표 컷라인 = Math.round((A+B+C)/3) — 반별 평균으로 단일 ReferenceLine 시각화
+- [Phase 02-02]: Recharts SVG에서 CSS 변수 불가 → hsl 직접 값 사용 (category-chart.tsx 패턴)
 
 ### Pending Todos
 
@@ -69,5 +72,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-22
-Stopped at: Completed 02-01-PLAN.md (KPI 카드 + Mock 배너 + dashboard page 교체)
-Resume file: .planning/phases/02-core-dashboard/02-02-PLAN.md
+Stopped at: Completed 02-02-PLAN.md (히스토그램 차트 + dashboard/page.tsx 완성)
+Resume file: .planning/phases/03-po-achievement/ (Phase 3 시작 필요)

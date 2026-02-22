@@ -13,7 +13,7 @@
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Data Foundation** - Google Sheets 3반 파싱·익명화·폴백 데이터 레이어 구축
-- [ ] **Phase 2: Core Dashboard** - KPI 요약·성적 분포 히스토그램·상대평가 40% 컷라인 뷰
+- [x] **Phase 2: Core Dashboard** - KPI 요약·성적 분포 히스토그램·상대평가 40% 컷라인 뷰 (completed 2026-02-22)
 - [ ] **Phase 3: Learning Outcomes** - 학습성과 상/중/하 달성도 분석 (인증평가 핵심)
 - [ ] **Phase 4: Student Lookup and Class Comparison** - 학생 검색·순위 차트·반 간 비교·핵심간호술
 
@@ -78,6 +78,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 2/2 | Complete | 2026-02-22 |
-| 2. Core Dashboard | 0/2 | Planning complete | - |
+| 2. Core Dashboard | 2/2 | Complete   | 2026-02-22 |
 | 3. Learning Outcomes | 0/TBD | Not started | - |
 | 4. Student Lookup and Class Comparison | 0/TBD | Not started | - |

@@ -17,7 +17,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Dashboard Overview
 
 - [x] **DASH-01**: 교수가 대시보드 진입 시 KPI 요약 카드(총 학생수, 반별 평균, 전체 평균, 최고점, 최저점, 표준편차)를 한 눈에 확인할 수 있다
-- [ ] **DASH-02**: 교수가 반별 성적 분포 히스토그램을 통해 점수대별 학생 수를 파악할 수 있다
+- [x] **DASH-02**: 교수가 반별 성적 분포 히스토그램을 통해 점수대별 학생 수를 파악할 수 있다
 - [x] **DASH-03**: 교수가 반별 상위 40% 컷라인(상대평가 A등급 경계선)을 차트에서 시각적으로 확인할 수 있다
 
 ### Learning Outcomes (학습성과 — 핵심)
@@ -75,7 +75,7 @@ Requirements for initial release. Each maps to roadmap phases.
 | DATA-03 | Phase 1 | Complete |
 | DATA-04 | Phase 1 | Complete |
 | DASH-01 | Phase 2 | Complete |
-| DASH-02 | Phase 2 | Pending |
+| DASH-02 | Phase 2 | Complete |
 | DASH-03 | Phase 2 | Complete |
 | UI-01 | Phase 2 | Complete |
 | UI-02 | Phase 2 | Complete |
