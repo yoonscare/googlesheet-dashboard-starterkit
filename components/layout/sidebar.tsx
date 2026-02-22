@@ -7,6 +7,7 @@ import Link from "next/link";
 import {
   LayoutDashboard,
   GraduationCap,
+  Users,
   ChevronLeft,
   ChevronRight,
   Menu,
@@ -26,6 +27,11 @@ const navItems = [
     icon: GraduationCap,
     label: "학습성과",
     href: "/learning-outcomes",
+  },
+  {
+    icon: Users,
+    label: "학생 조회",
+    href: "/students",
   },
 ];
 
