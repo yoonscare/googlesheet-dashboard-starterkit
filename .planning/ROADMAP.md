@@ -13,7 +13,7 @@
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Data Foundation** - Google Sheets 3반 파싱·익명화·폴백 데이터 레이어 구축
-- [x] **Phase 2: Core Dashboard** - KPI 요약·성적 분포 히스토그램·상대평가 40% 컷라인 뷰 (completed 2026-02-22)
+- [x] **Phase 2: Core Dashboard** - KPI 요약·성적 분포 히스토그램·상대평가 40% 컷라인 뷰 (completed 2026-02-22)
 - [ ] **Phase 3: Learning Outcomes** - 학습성과 상/중/하 달성도 분석 (인증평가 핵심)
 - [ ] **Phase 4: Student Lookup and Class Comparison** - 학생 검색·순위 차트·반 간 비교·핵심간호술
 
@@ -45,8 +45,8 @@ Plans:
   5. Google Sheets 연결 실패(dataSource가 'mock' 또는 'partial-mock')일 때 상단에 "목 데이터 사용 중" 경고 배너가 표시된다
 **Plans**: 2 plans
 Plans:
-- [ ] 02-01-PLAN.md — KPI 계산 유틸 + KPI 카드 6개 + Mock 배너 + page.tsx 교체
-- [ ] 02-02-PLAN.md — 반별 성적 분포 히스토그램 + 컷라인 시각화 + 반응형 레이아웃
+- [x] 02-01-PLAN.md — KPI 계산 유틸 + KPI 카드 6개 + Mock 배너 + page.tsx 교체
+- [x] 02-02-PLAN.md — 반별 성적 분포 히스토그램 + 컷라인 시각화 + 반응형 레이아웃
 
 ### Phase 3: Learning Outcomes
 **Goal**: 교수가 학습성과별(대상자간호 LO2·안전과질 LO5·전문직 LO3) 상/중/하 달성 현황을 반별·전체 기준으로 조회하고, 하 등급 학생의 세부 점수를 익명 상태로 드릴다운할 수 있다
@@ -57,7 +57,10 @@ Plans:
   2. 각 학습성과에 "달성" 또는 "미달성" 배지가 표시된다 (중 이상 비율 80% 이상이면 달성)
   3. 하 등급 학생 목록이 익명 처리된 상태로 조회 가능하다
   4. 하 등급 학생을 선택하면 사전학습·보고서·실습교수·현장지도자·해당 학습성과 세부점수가 표시된다
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 03-01-PLAN.md — PO 집계 유틸 + 분포표 + 학습성과 페이지 + 사이드바 링크
+- [ ] 03-02-PLAN.md — 하 등급 학생 드릴다운 패널 + 페이지 통합
 
 ### Phase 4: Student Lookup and Class Comparison
 **Goal**: 교수가 개별 학생을 검색·조회하고, 전체 순위와 40% 컷라인을 시각적으로 확인하며, A/B/C반 간 성적 분포를 나란히 비교할 수 있다
@@ -79,5 +82,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 2/2 | Complete | 2026-02-22 |
 | 2. Core Dashboard | 2/2 | Complete    | 2026-02-22 |
-| 3. Learning Outcomes | 0/TBD | Not started | - |
+| 3. Learning Outcomes | 0/2 | In progress | - |
 | 4. Student Lookup and Class Comparison | 0/TBD | Not started | - |
