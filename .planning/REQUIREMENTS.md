@@ -29,8 +29,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Student Management
 
-- [ ] **STUD-01**: 교수가 전체 학생 성적 테이블에서 반별 필터링과 이름/학번 검색을 통해 개별 학생 성적을 조회할 수 있다
-- [ ] **STUD-02**: 교수가 총점 기준 순위 차트에서 전체 학생의 순위와 40% 컷라인 경계를 시각적으로 확인할 수 있다
+- [x] **STUD-01**: 교수가 전체 학생 성적 테이블에서 반별 필터링과 이름/학번 검색을 통해 개별 학생 성적을 조회할 수 있다
+- [x] **STUD-02**: 교수가 총점 기준 순위 차트에서 전체 학생의 순위와 40% 컷라인 경계를 시각적으로 확인할 수 있다
 
 ### Class Comparison
 
@@ -83,8 +83,8 @@ Requirements for initial release. Each maps to roadmap phases.
 | LO-02 | Phase 3 | Complete |
 | LO-03 | Phase 3 | Complete |
 | LO-04 | Phase 3 | Complete |
-| STUD-01 | Phase 4 | Pending |
-| STUD-02 | Phase 4 | Pending |
+| STUD-01 | Phase 4 | Complete |
+| STUD-02 | Phase 4 | Complete |
 | COMP-01 | Phase 4 | Pending |
 | COMP-02 | Phase 4 | Pending |
 

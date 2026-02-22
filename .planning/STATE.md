@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-22)
 
 **Core value:** 교수가 학습성과 달성도와 성적 분포를 시각적으로 분석하여 공정한 상대평가와 인증평가 보고를 효율적으로 할 수 있어야 한다
-**Current focus:** Phase 3 - Learning Outcomes
+**Current focus:** Phase 4 - Student Lookup & Class Comparison
 
 ## Current Position
 
-Phase: 3 of 4 (Learning Outcomes — PO 달성도 분석)
-Plan: 2 of 2 완료 — Plan 01(분포표 + 사이드바) 완료, Plan 02(드릴다운 패널) 완료
-Status: Phase 3 완료 (모든 요구사항 LO-01 ~ LO-04 충족)
-Last activity: 2026-02-23 — Plan 02 (PoLowGradePanel 드릴다운 패널 + 학습성과 페이지 통합) 완료
+Phase: 4 of 4 (학생 조회·반별 비교)
+Plan: 1 of 2 완료 — Plan 01(학생 조회 페이지 + 순위 차트) 완료
+Status: Phase 4 진행 중 (STUD-01, STUD-02 충족)
+Last activity: 2026-02-23 — Plan 01 (/students 페이지 + 순위 차트 + 사이드바 링크) 완료
 
-Progress: [███████░░░] 75%
+Progress: [████████░░] 87%
 
 ## Performance Metrics
 
@@ -30,6 +30,7 @@ Progress: [███████░░░] 75%
 | 01-data-foundation | 2 | 5 min | 2.5 min |
 | 02-core-dashboard | 2 | 5 min | 2.5 min |
 | 03-learning-outcomes | 2 | 5 min | 2.5 min |
+| 04-student-lookup-class-comparison | 1 | 3 min | 3.0 min |
 
 **Recent Trend:**
 - Last 5 plans: 2 min, 3 min, 3 min, 2 min, 3 min
@@ -66,6 +67,10 @@ Recent decisions affecting current work:
 - [03-01]: GraduationCap 아이콘을 학습성과 사이드바 링크에 사용 (기존 lucide-react 설치분)
 - [03-02]: getLowGradeStudents()를 Client Component에서 직접 호출 — 순수 TypeScript 함수로 googleapis 의존성 없음
 - [03-02]: PO 탭 변경 시 selectedClass도 함께 초기화 — 탭 전환 후 이전 반 필터 잔류로 인한 UX 혼란 방지
+- [04-01]: buildRankData는 원본 배열 변경 금지 — [...students].sort() spread 복사 패턴 사용
+- [04-01]: StudentTable 필터링은 useMemo로 최적화 — [students, classFilter, searchQuery] 의존
+- [04-01]: StudentRankChart Cell opacity 1/0.5로 상위40%/하위60% 시각적 구분
+- [04-01]: 하단 범례는 Recharts Legend 대신 커스텀 div — 색상 원 + 레이블 텍스트
 
 ### Pending Todos
 
@@ -79,5 +84,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 03-02-PLAN.md (PoLowGradePanel 드릴다운 패널 + 학습성과 페이지 통합 — Phase 3 완료)
-Resume file: .planning/phases/04-*/04-01-PLAN.md (Phase 4 첫 번째 플랜)
+Stopped at: Completed 04-01-PLAN.md (/students 페이지 + 학생 순위 차트 + 사이드바 학생 조회 링크)
+Resume file: .planning/phases/04-student-lookup-class-comparison/04-02-PLAN.md (Phase 4 두 번째 플랜)
