@@ -8,6 +8,7 @@ import {
   LayoutDashboard,
   GraduationCap,
   Users,
+  BarChart2,
   ChevronLeft,
   ChevronRight,
   Menu,
@@ -32,6 +33,11 @@ const navItems = [
     icon: Users,
     label: "학생 조회",
     href: "/students",
+  },
+  {
+    icon: BarChart2,
+    label: "반별 비교",
+    href: "/class-comparison",
   },
 ];
 
