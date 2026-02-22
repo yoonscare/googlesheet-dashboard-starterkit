@@ -5,32 +5,33 @@
 See: .planning/PROJECT.md (updated 2026-02-22)
 
 **Core value:** 교수가 학습성과 달성도와 성적 분포를 시각적으로 분석하여 공정한 상대평가와 인증평가 보고를 효율적으로 할 수 있어야 한다
-**Current focus:** Phase 1 - Data Foundation
+**Current focus:** Phase 2 - Core Dashboard
 
 ## Current Position
 
-Phase: 1 of 4 (Data Foundation)
-Plan: 2 of 2 in current phase
-Status: Phase 1 완료 — Phase 2 진행 준비
-Last activity: 2026-02-22 — Plan 02 (Mock 데이터 + 통합 레이어) 완료
+Phase: 2 of 4 (Core Dashboard)
+Plan: 1 of 2 in current phase
+Status: Phase 2 Plan 01 완료 — Plan 02 (히스토그램 차트) 진행 준비
+Last activity: 2026-02-22 — Plan 01 (KPI 카드 + Mock 배너) 완료
 
-Progress: [██░░░░░░░░] 20%
+Progress: [███░░░░░░░] 30%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 2.5 min
-- Total execution time: 0.08 hours
+- Total plans completed: 3
+- Average duration: 2.7 min
+- Total execution time: 0.13 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-data-foundation | 2 | 5 min | 2.5 min |
+| 02-core-dashboard | 1 | 3 min | 3 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min, 3 min
+- Last 5 plans: 2 min, 3 min, 3 min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -51,6 +52,10 @@ Recent decisions affecting current work:
 - [01-02]: mockGradeData는 모듈 로드 시 1회 생성 — 매 호출마다 다른 데이터 생성 방지
 - [01-02]: parseClassRows 헬퍼로 usedMock 플래그 추적 — dataSource 결정 로직 명확화
 - [01-02]: DATA_RANGE = 'A4:AD' — 헤더 3행 제외, 4행부터 읽기
+- [02-01]: 컷라인 계산 Math.ceil(n * 0.4) - 1 인덱스 — 상위 40%의 하한 경계점
+- [02-01]: 최고점/최저점 reduce 패턴으로 빈 배열 -Infinity/Infinity 방지
+- [02-01]: 반별 평균을 총 학생수 카드 description에 병합 — 카드 수 6개 유지
+- [02-01]: GradeKpiData 타입을 types/grades.ts에 추가 (기존 패턴 준수)
 
 ### Pending Todos
 
@@ -64,5 +69,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-22
-Stopped at: Completed 01-02-PLAN.md (Mock 데이터 + 통합 레이어)
-Resume file: .planning/phases/02-ui-foundation/ (Phase 2 시작)
+Stopped at: Completed 02-01-PLAN.md (KPI 카드 + Mock 배너 + dashboard page 교체)
+Resume file: .planning/phases/02-core-dashboard/02-02-PLAN.md

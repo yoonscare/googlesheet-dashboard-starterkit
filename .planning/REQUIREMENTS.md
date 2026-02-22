@@ -16,9 +16,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Dashboard Overview
 
-- [ ] **DASH-01**: 교수가 대시보드 진입 시 KPI 요약 카드(총 학생수, 반별 평균, 전체 평균, 최고점, 최저점, 표준편차)를 한 눈에 확인할 수 있다
+- [x] **DASH-01**: 교수가 대시보드 진입 시 KPI 요약 카드(총 학생수, 반별 평균, 전체 평균, 최고점, 최저점, 표준편차)를 한 눈에 확인할 수 있다
 - [ ] **DASH-02**: 교수가 반별 성적 분포 히스토그램을 통해 점수대별 학생 수를 파악할 수 있다
-- [ ] **DASH-03**: 교수가 반별 상위 40% 컷라인(상대평가 A등급 경계선)을 차트에서 시각적으로 확인할 수 있다
+- [x] **DASH-03**: 교수가 반별 상위 40% 컷라인(상대평가 A등급 경계선)을 차트에서 시각적으로 확인할 수 있다
 
 ### Learning Outcomes (학습성과 — 핵심)
 
@@ -39,8 +39,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### UI/UX
 
-- [ ] **UI-01**: 대시보드가 다크모드/라이트모드를 지원한다
-- [ ] **UI-02**: 대시보드가 데스크톱/태블릿에서 반응형으로 표시된다
+- [x] **UI-01**: 대시보드가 다크모드/라이트모드를 지원한다
+- [x] **UI-02**: 대시보드가 데스크톱/태블릿에서 반응형으로 표시된다
 
 ## v2 Requirements
 
@@ -74,11 +74,11 @@ Requirements for initial release. Each maps to roadmap phases.
 | DATA-02 | Phase 1 | Complete |
 | DATA-03 | Phase 1 | Complete |
 | DATA-04 | Phase 1 | Complete |
-| DASH-01 | Phase 2 | Pending |
+| DASH-01 | Phase 2 | Complete |
 | DASH-02 | Phase 2 | Pending |
-| DASH-03 | Phase 2 | Pending |
-| UI-01 | Phase 2 | Pending |
-| UI-02 | Phase 2 | Pending |
+| DASH-03 | Phase 2 | Complete |
+| UI-01 | Phase 2 | Complete |
+| UI-02 | Phase 2 | Complete |
 | LO-01 | Phase 3 | Pending |
 | LO-02 | Phase 3 | Pending |
 | LO-03 | Phase 3 | Pending |
