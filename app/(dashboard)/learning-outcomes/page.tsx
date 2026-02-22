@@ -5,6 +5,7 @@ import { getGradeData } from '@/lib/grade-data';
 import { computePoAchievement } from '@/lib/grade-po';
 import { PoAchievementTable } from '@/components/dashboard/po-achievement-table';
 import { MockDataBanner } from '@/components/dashboard/mock-data-banner';
+import { PoLowGradePanel } from '@/components/dashboard/po-low-grade-panel';
 
 export default async function LearningOutcomesPage() {
   // 서버에서 학생 성적 데이터 페칭 (Google Sheets 또는 mock 폴백)
@@ -23,7 +24,8 @@ export default async function LearningOutcomesPage() {
       {/* 3개 PO × 4개 열 분포표 + 달성/미달성 배지 */}
       <PoAchievementTable poData={poData} />
 
-      {/* Plan 03-02에서 PoLowGradePanel 추가 예정 */}
+      {/* 하 등급 학생 드릴다운 패널 — PO 탭 → 반 필터 → 학생 선택 → 세부점수 */}
+      <PoLowGradePanel students={students} />
     </div>
   );
 }
