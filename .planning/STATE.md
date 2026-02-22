@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-02-22)
 ## Current Position
 
 Phase: 4 of 4 (학생 조회·반별 비교)
-Plan: 1 of 2 완료 — Plan 01(학생 조회 페이지 + 순위 차트) 완료
-Status: Phase 4 진행 중 (STUD-01, STUD-02 충족)
-Last activity: 2026-02-23 — Plan 01 (/students 페이지 + 순위 차트 + 사이드바 링크) 완료
+Plan: 2 of 2 완료 — Plan 02(/class-comparison 페이지 + 반별 비교 차트 + 핵심간호술 통계) 완료
+Status: Phase 4 완료 (STUD-01, STUD-02, COMP-01, COMP-02 충족) — 전체 프로젝트 완료
+Last activity: 2026-02-23 — Plan 02 (/class-comparison 페이지 + 반별 비교 차트 + 사이드바 링크) 완료
 
-Progress: [████████░░] 87%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
@@ -30,10 +30,10 @@ Progress: [████████░░] 87%
 | 01-data-foundation | 2 | 5 min | 2.5 min |
 | 02-core-dashboard | 2 | 5 min | 2.5 min |
 | 03-learning-outcomes | 2 | 5 min | 2.5 min |
-| 04-student-lookup-class-comparison | 1 | 3 min | 3.0 min |
+| 04-student-lookup-class-comparison | 2 | 5 min | 2.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min, 3 min, 3 min, 2 min, 3 min
+- Last 5 plans: 3 min, 3 min, 2 min, 3 min, 2 min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -71,6 +71,9 @@ Recent decisions affecting current work:
 - [04-01]: StudentTable 필터링은 useMemo로 최적화 — [students, classFilter, searchQuery] 의존
 - [04-01]: StudentRankChart Cell opacity 1/0.5로 상위40%/하위60% 시각적 구분
 - [04-01]: 하단 범례는 Recharts Legend 대신 커스텀 div — 색상 원 + 레이블 텍스트
+- [Phase 04-student-lookup-class-comparison]: [04-02]: calcStats 내부 헬퍼로 avg/max/min 일괄 계산 — buildClassComparisonData와 computeNursingSkillsStats에서 공유
+- [Phase 04-student-lookup-class-comparison]: [04-02]: NursingSkillsStatsCard는 Server Component로 구현 — 인터랙션 없음, use client 불필요
+- [Phase 04-student-lookup-class-comparison]: [04-02]: 핵심간호술 섹션 헤더에 '총점 미포함' 명시 — 교수가 데이터 독립성을 명확히 인지하도록
 
 ### Pending Todos
 
@@ -84,5 +87,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 04-01-PLAN.md (/students 페이지 + 학생 순위 차트 + 사이드바 학생 조회 링크)
-Resume file: .planning/phases/04-student-lookup-class-comparison/04-02-PLAN.md (Phase 4 두 번째 플랜)
+Stopped at: Completed 04-02-PLAN.md (/class-comparison 페이지 + 반별 비교 차트 + 핵심간호술 통계 + 사이드바 링크) — 전체 프로젝트 완료
+Resume file: N/A — 모든 Phase 완료

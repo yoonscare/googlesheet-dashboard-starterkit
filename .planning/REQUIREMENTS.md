@@ -34,8 +34,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Class Comparison
 
-- [ ] **COMP-01**: 교수가 A/B/C반의 평균, 분포를 나란히 비교하는 차트를 확인할 수 있다
-- [ ] **COMP-02**: 핵심간호술(100점 만점 별도 평가) 데이터가 총점과 분리되어 별도로 추적·표시된다
+- [x] **COMP-01**: 교수가 A/B/C반의 평균, 분포를 나란히 비교하는 차트를 확인할 수 있다
+- [x] **COMP-02**: 핵심간호술(100점 만점 별도 평가) 데이터가 총점과 분리되어 별도로 추적·표시된다
 
 ### UI/UX
 
@@ -85,8 +85,8 @@ Requirements for initial release. Each maps to roadmap phases.
 | LO-04 | Phase 3 | Complete |
 | STUD-01 | Phase 4 | Complete |
 | STUD-02 | Phase 4 | Complete |
-| COMP-01 | Phase 4 | Pending |
-| COMP-02 | Phase 4 | Pending |
+| COMP-01 | Phase 4 | Complete |
+| COMP-02 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 17 total
