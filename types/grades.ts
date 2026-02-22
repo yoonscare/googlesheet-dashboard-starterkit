@@ -64,3 +64,24 @@ export interface GradeDataResult {
   students: StudentGrade[];
   dataSource: DataSource;
 }
+
+/**
+ * 대시보드 KPI 데이터 인터페이스
+ * - computeGradeKpi()로 계산된 집계 지표 모음
+ */
+export interface GradeKpiData {
+  /** 전체 학생 수 */
+  totalStudents: number;
+  /** 반별 평균 점수 (소수점 1자리) */
+  classAverages: Record<ClassCode, number>;
+  /** 전체 평균 점수 (소수점 1자리) */
+  overallAverage: number;
+  /** 최고점 */
+  highest: number;
+  /** 최저점 */
+  lowest: number;
+  /** 표준편차 (소수점 1자리) */
+  stdDev: number;
+  /** 반별 상위 40% 컷라인 점수 */
+  cutlines: Record<ClassCode, number>;
+}
