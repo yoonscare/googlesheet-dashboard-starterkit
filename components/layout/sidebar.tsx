@@ -6,6 +6,7 @@ import { useState } from "react";
 import Link from "next/link";
 import {
   LayoutDashboard,
+  GraduationCap,
   ChevronLeft,
   ChevronRight,
   Menu,
@@ -21,8 +22,11 @@ const navItems = [
     label: "대시보드",
     href: "/dashboard",
   },
-  // 향후 메뉴 추가 가능
-  // { icon: Settings, label: "설정", href: "/settings" },
+  {
+    icon: GraduationCap,
+    label: "학습성과",
+    href: "/learning-outcomes",
+  },
 ];
 
 export function Sidebar() {
