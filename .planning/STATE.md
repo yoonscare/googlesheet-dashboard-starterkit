@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-22)
 
 **Core value:** 교수가 학습성과 달성도와 성적 분포를 시각적으로 분석하여 공정한 상대평가와 인증평가 보고를 효율적으로 할 수 있어야 한다
-**Current focus:** Phase 2 - Core Dashboard
+**Current focus:** Phase 3 - Learning Outcomes
 
 ## Current Position
 
-Phase: 2 of 4 (Core Dashboard) — 완료
-Plan: 2 of 2 in current phase — Phase 2 완전 완료
-Status: Phase 2 완료 — Phase 3 (PO 달성도 분석) 진행 준비
-Last activity: 2026-02-22 — Plan 02 (히스토그램 차트 + dashboard 완성) 완료
+Phase: 3 of 4 (Learning Outcomes — PO 달성도 분석)
+Plan: 1 of 2 완료 — Plan 01(분포표 + 사이드바) 완료, Plan 02(드릴다운 패널) 진행 준비
+Status: Phase 3 Plan 01 완료
+Last activity: 2026-02-23 — Plan 01 (PO 분포 집계 유틸 + 분포표 + 학습성과 페이지) 완료
 
-Progress: [████░░░░░░] 40%
+Progress: [█████░░░░░] 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 2.7 min
-- Total execution time: 0.13 hours
+- Total plans completed: 4
+- Average duration: 2.8 min
+- Total execution time: 0.19 hours
 
 **By Phase:**
 
@@ -29,9 +29,10 @@ Progress: [████░░░░░░] 40%
 |-------|-------|-------|----------|
 | 01-data-foundation | 2 | 5 min | 2.5 min |
 | 02-core-dashboard | 2 | 5 min | 2.5 min |
+| 03-learning-outcomes | 1 | 3 min | 3 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min, 3 min, 3 min, 2 min
+- Last 5 plans: 2 min, 3 min, 3 min, 2 min, 3 min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -59,6 +60,10 @@ Recent decisions affecting current work:
 - [Phase 02-02]: SCORE_RANGES 상수 배열로 구간 정의 — buildHistogramData()와 findCutlineRange() 동일 레이블 참조
 - [Phase 02-02]: 대표 컷라인 = Math.round((A+B+C)/3) — 반별 평균으로 단일 ReferenceLine 시각화
 - [Phase 02-02]: Recharts SVG에서 CSS 변수 불가 → hsl 직접 값 사용 (category-chart.tsx 패턴)
+- [03-01]: achieved 판정은 achieveRate가 아닌 raw 비율 (high + mid) / total >= 0.8 사용 — 부동소수점 반올림 엣지케이스 방지
+- [03-01]: computeDistribution()은 export하지 않음 — 내부 헬퍼, 외부 API는 computePoAchievement()와 getLowGradeStudents()로 제한
+- [03-01]: 분포표는 테이블로 구현 — 차트 시각화는 v2 ENH-01에서 추가 예정
+- [03-01]: GraduationCap 아이콘을 학습성과 사이드바 링크에 사용 (기존 lucide-react 설치분)
 
 ### Pending Todos
 
@@ -71,6 +76,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-22
-Stopped at: Completed 02-02-PLAN.md (히스토그램 차트 + dashboard/page.tsx 완성)
-Resume file: .planning/phases/03-po-achievement/ (Phase 3 시작 필요)
+Last session: 2026-02-23
+Stopped at: Completed 03-01-PLAN.md (PO 분포 집계 유틸 + 분포표 + 학습성과 페이지 + 사이드바 링크)
+Resume file: .planning/phases/03-learning-outcomes/03-02-PLAN.md (PoLowGradePanel 드릴다운 패널)

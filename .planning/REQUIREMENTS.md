@@ -22,8 +22,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Learning Outcomes (학습성과 — 핵심)
 
-- [ ] **LO-01**: 교수가 학습성과별(학습성과2 대상자간호 64점, 학습성과5 안전과질 8점, 학습성과3 전문직 8점) 상/중/하 인원 분포를 반별 + 전체 기준으로 확인할 수 있다
-- [ ] **LO-02**: 각 학습성과에 대해 중 이상 학생 비율(달성률 %)이 표시되고, 80% 이상이면 '달성', 미만이면 '미달성' 배지가 표시된다
+- [x] **LO-01**: 교수가 학습성과별(학습성과2 대상자간호 64점, 학습성과5 안전과질 8점, 학습성과3 전문직 8점) 상/중/하 인원 분포를 반별 + 전체 기준으로 확인할 수 있다
+- [x] **LO-02**: 각 학습성과에 대해 중 이상 학생 비율(달성률 %)이 표시되고, 80% 이상이면 '달성', 미만이면 '미달성' 배지가 표시된다
 - [ ] **LO-03**: 교수가 학습성과별 하 등급 학생 목록을 익명 처리된 상태로 조회할 수 있다
 - [ ] **LO-04**: 하 등급 학생의 각 평가 항목별 점수 상세(사전학습, 보고서, 실습교수, 현장지도자, 해당 학습성과 세부점수)를 확인할 수 있다
 
@@ -79,8 +79,8 @@ Requirements for initial release. Each maps to roadmap phases.
 | DASH-03 | Phase 2 | Complete |
 | UI-01 | Phase 2 | Complete |
 | UI-02 | Phase 2 | Complete |
-| LO-01 | Phase 3 | Pending |
-| LO-02 | Phase 3 | Pending |
+| LO-01 | Phase 3 | Complete |
+| LO-02 | Phase 3 | Complete |
 | LO-03 | Phase 3 | Pending |
 | LO-04 | Phase 3 | Pending |
 | STUD-01 | Phase 4 | Pending |
@@ -95,4 +95,4 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ---
 *Requirements defined: 2026-02-22*
-*Last updated: 2026-02-22 — traceability updated to match 4-phase roadmap (COMP-01/02 moved from Phase 5 to Phase 4)*
+*Last updated: 2026-02-23 — LO-01, LO-02 완료 (03-01-PLAN.md 실행)*

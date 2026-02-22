@@ -59,7 +59,7 @@ Plans:
   4. 하 등급 학생을 선택하면 사전학습·보고서·실습교수·현장지도자·해당 학습성과 세부점수가 표시된다
 **Plans**: 2 plans
 Plans:
-- [ ] 03-01-PLAN.md — PO 집계 유틸 + 분포표 + 학습성과 페이지 + 사이드바 링크
+- [x] 03-01-PLAN.md — PO 집계 유틸 + 분포표 + 학습성과 페이지 + 사이드바 링크
 - [ ] 03-02-PLAN.md — 하 등급 학생 드릴다운 패널 + 페이지 통합
 
 ### Phase 4: Student Lookup and Class Comparison
@@ -82,5 +82,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 2/2 | Complete | 2026-02-22 |
 | 2. Core Dashboard | 2/2 | Complete    | 2026-02-22 |
-| 3. Learning Outcomes | 0/2 | In progress | - |
+| 3. Learning Outcomes | 1/2 | In progress | - |
 | 4. Student Lookup and Class Comparison | 0/TBD | Not started | - |
