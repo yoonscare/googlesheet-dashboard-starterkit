@@ -1,32 +1,27 @@
 // 메인 대시보드 페이지 (Server Component)
-// 서버에서 데이터를 가져와 각 컴포넌트에 전달합니다
-import { getDashboardData } from "@/lib/data";
-import { KpiCards } from "@/components/dashboard/kpi-cards";
-import { RevenueChart } from "@/components/dashboard/revenue-chart";
-import { CategoryChart } from "@/components/dashboard/category-chart";
-import { RecentOrdersTable } from "@/components/dashboard/recent-orders-table";
+// Phase 1 데이터 파이프라인(getGradeData)과 KPI 컴포넌트를 연결한다
+
+import { getGradeData } from '@/lib/grade-data';
+import { computeGradeKpi } from '@/lib/grade-kpi';
+import { GradeKpiCards } from '@/components/dashboard/grade-kpi-cards';
+import { MockDataBanner } from '@/components/dashboard/mock-data-banner';
 
 export default async function DashboardPage() {
-  // 서버에서 데이터 페칭 (Google Sheets 또는 mock 데이터)
-  const data = await getDashboardData();
+  // 서버에서 학생 성적 데이터 페칭 (Google Sheets 또는 mock 폴백)
+  const { students, dataSource } = await getGradeData();
+
+  // KPI 지표 계산 (순수 함수, 서버사이드)
+  const kpi = computeGradeKpi(students);
 
   return (
     <div className="space-y-6">
-      {/* KPI 요약 카드 4개 */}
-      <KpiCards data={data.kpi} />
+      {/* Mock 데이터 사용 시 경고 배너 */}
+      <MockDataBanner dataSource={dataSource} />
 
-      {/* 차트 영역: 라인 차트 (4/7) + 파이 차트 (3/7) */}
-      <div className="grid gap-6 lg:grid-cols-7">
-        <div className="lg:col-span-4">
-          <RevenueChart data={data.monthlyRevenue} />
-        </div>
-        <div className="lg:col-span-3">
-          <CategoryChart data={data.categoryDistribution} />
-        </div>
-      </div>
+      {/* KPI 요약 카드 6개 */}
+      <GradeKpiCards kpi={kpi} />
 
-      {/* 최근 주문 테이블 */}
-      <RecentOrdersTable data={data.recentOrders} />
+      {/* 히스토그램 차트: Plan 02에서 구현 */}
     </div>
   );
 }
