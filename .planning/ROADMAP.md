@@ -43,7 +43,10 @@ Plans:
   3. 반별 상위 40% 경계선이 히스토그램 또는 순위 차트에 "A 이상 40% 컷라인" 레이블과 함께 명확히 표시된다
   4. 다크모드/라이트모드 전환이 작동하며 데스크톱과 태블릿 화면에서 레이아웃이 깨지지 않는다
   5. Google Sheets 연결 실패(dataSource가 'mock' 또는 'partial-mock')일 때 상단에 "목 데이터 사용 중" 경고 배너가 표시된다
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 02-01-PLAN.md — KPI 계산 유틸 + KPI 카드 6개 + Mock 배너 + page.tsx 교체
+- [ ] 02-02-PLAN.md — 반별 성적 분포 히스토그램 + 컷라인 시각화 + 반응형 레이아웃
 
 ### Phase 3: Learning Outcomes
 **Goal**: 교수가 학습성과별(대상자간호 LO2·안전과질 LO5·전문직 LO3) 상/중/하 달성 현황을 반별·전체 기준으로 조회하고, 하 등급 학생의 세부 점수를 익명 상태로 드릴다운할 수 있다
@@ -75,6 +78,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 2/2 | Complete | 2026-02-22 |
-| 2. Core Dashboard | 0/TBD | Not started | - |
+| 2. Core Dashboard | 0/2 | Planning complete | - |
 | 3. Learning Outcomes | 0/TBD | Not started | - |
 | 4. Student Lookup and Class Comparison | 0/TBD | Not started | - |
