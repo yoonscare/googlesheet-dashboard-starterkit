@@ -104,3 +104,97 @@ echo "새_스프레드시트_ID" | vercel env add GOOGLE_SHEETS_ID production
 | `GOOGLE_SERVICE_ACCOUNT_EMAIL` | 서비스 계정 이메일 | X |
 | `GOOGLE_PRIVATE_KEY` | 서비스 계정 비공개 키 | X |
 | `ALLOWED_EMAILS` | 접근 허용 이메일 (선택) | O |
+| `AUTH_TRUST_HOST` | Vercel 호스트 신뢰 설정 (`true`) | X |
+| `AUTH_URL` | 프로덕션 URL (`https://sheet-dashbord-test.vercel.app`) | X |
+
+---
+
+## Google OAuth 설정 상세 (최초 배포 시 삽질 방지)
+
+2025년 2월 최초 배포 때 겪었던 문제와 해결법입니다.
+
+### 1. "액세스 차단됨 / 401 invalid_client" 오류
+
+**원인**: Vercel 환경변수에 값을 넣을 때 `echo`를 쓰면 끝에 줄바꿈(`\n`)이 추가됨.
+Google이 클라이언트 ID를 인식하지 못함.
+
+**해결**: 환경변수 설정 시 반드시 `printf '%s'` 사용:
+```bash
+# 잘못된 방법 (줄바꿈 포함됨)
+echo "값" | vercel env add 변수명 production
+
+# 올바른 방법 (줄바꿈 없음)
+printf '%s' '값' | vercel env add 변수명 production
+```
+
+또는 Vercel 웹 대시보드에서 직접 입력하면 이 문제 없음.
+
+### 2. "목 데이터로 대체 중" 배너
+
+**원인**: `GOOGLE_PRIVATE_KEY` 환경변수가 올바르지 않거나 시트 공유가 안 됨.
+
+**확인 순서**:
+1. Google Sheet에 서비스 계정 이메일이 공유되어 있는지 확인
+2. Vercel 환경변수에서 `GOOGLE_PRIVATE_KEY` 값이 올바른지 확인
+3. 시트 탭 이름이 `A반`, `B반`, `C반`인지 확인
+
+### 3. Google Cloud Console 필수 설정
+
+OAuth 2.0 클라이언트에 아래 두 항목 모두 등록:
+
+| 항목 | 값 |
+|------|-----|
+| 승인된 자바스크립트 원본 | `https://sheet-dashbord-test.vercel.app` |
+| 승인된 리디렉션 URI | `https://sheet-dashbord-test.vercel.app/api/auth/callback/google` |
+
+### 4. OAuth 동의 화면
+
+- **테스트 모드**인 경우: "테스트 사용자"에 본인 Gmail 추가 필요
+  - 경로: API 및 서비스 → OAuth 동의 화면 → 대상 탭 → 테스트 사용자 → ADD USERS
+- **또는**: "앱 게시" 버튼 클릭하면 모든 계정 사용 가능
+
+---
+
+## 학습성과 분석 스킬 (Claude/Manus용)
+
+대시보드와 별개로, Claude 웹앱이나 Manus에서 학습성과를 분석할 수 있는 스킬 파일이 있습니다.
+
+### 파일 위치
+- 원본: `docs/nursing-learning-outcomes/SKILL.md`
+- Manus용 zip: `docs/nursing-learning-outcomes.zip`
+- Claude 웹앱용: `docs/skill-learning-outcomes.md`
+
+### 사용법
+1. **Claude 웹앱**: Projects → 새 프로젝트 → Project Knowledge에 `skill-learning-outcomes.md` 업로드
+2. **Manus**: 스킬 업로드에 `nursing-learning-outcomes.zip` 업로드
+3. Google Sheets에서 학생 데이터를 복사 → 채팅에 붙여넣기 → "학습성과 분석해줘"
+
+### 분석 결과
+- PO2(대상자간호), PO5(안전과질), PO3(전문직) 등급 분포표
+- 반별(A/B/C) + 전체 달성률 및 달성 여부
+- 하 등급 학생 드릴다운 (익명화 처리됨)
+- 개선 제안
+
+---
+
+## 2025년 2월 23일 작업 기록
+
+이 프로젝트의 최초 배포 과정 요약입니다. 나중에 비슷한 작업 시 참고하세요.
+
+### 수행한 작업
+
+| 순서 | 작업 | 결과 |
+|------|------|------|
+| 1 | GitHub 레포 생성 및 push | `yoonscare/googlesheet-dashboard-starterkit` |
+| 2 | Vercel 프로젝트 생성 및 배포 | https://sheet-dashbord-test.vercel.app |
+| 3 | 환경변수 8개 설정 | AUTH_SECRET, AUTH_GOOGLE_ID/SECRET, GOOGLE_SHEETS_ID, SERVICE_ACCOUNT_EMAIL, PRIVATE_KEY, AUTH_TRUST_HOST, AUTH_URL |
+| 4 | Google OAuth 로그인 오류 해결 | 환경변수 줄바꿈 문제 → printf로 재설정 |
+| 5 | 매학기 운영 매뉴얼 작성 | 이 문서 (`docs/semester-guide.md`) |
+| 6 | 학습성과 분석 스킬 생성 | `docs/skill-learning-outcomes.md`, `docs/nursing-learning-outcomes.zip` |
+
+### 핵심 교훈
+
+1. **Vercel 환경변수는 웹 대시보드에서 직접 입력하는 게 안전** — CLI `echo`는 줄바꿈 문제 발생
+2. **Google OAuth는 자바스크립트 원본 + 리디렉션 URI 둘 다 필요**
+3. **OAuth 동의 화면이 테스트 모드면 테스트 사용자 등록 필수**
+4. **매학기 바꿀 것은 `GOOGLE_SHEETS_ID` 하나 + 시트 공유 + 재배포 뿐**
