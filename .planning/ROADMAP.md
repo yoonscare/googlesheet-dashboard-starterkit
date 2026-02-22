@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Data Foundation** - Google Sheets 3반 파싱·익명화·폴백 데이터 레이어 구축
 - [x] **Phase 2: Core Dashboard** - KPI 요약·성적 분포 히스토그램·상대평가 40% 컷라인 뷰 (completed 2026-02-22)
-- [ ] **Phase 3: Learning Outcomes** - 학습성과 상/중/하 달성도 분석 (인증평가 핵심)
+- [x] **Phase 3: Learning Outcomes** - 학습성과 상/중/하 달성도 분석 (인증평가 핵심) (completed 2026-02-23)
 - [ ] **Phase 4: Student Lookup and Class Comparison** - 학생 검색·순위 차트·반 간 비교·핵심간호술
 
 ## Phase Details
@@ -60,7 +60,7 @@ Plans:
 **Plans**: 2 plans
 Plans:
 - [x] 03-01-PLAN.md — PO 집계 유틸 + 분포표 + 학습성과 페이지 + 사이드바 링크
-- [ ] 03-02-PLAN.md — 하 등급 학생 드릴다운 패널 + 페이지 통합
+- [x] 03-02-PLAN.md — 하 등급 학생 드릴다운 패널 + 페이지 통합
 
 ### Phase 4: Student Lookup and Class Comparison
 **Goal**: 교수가 개별 학생을 검색·조회하고, 전체 순위와 40% 컷라인을 시각적으로 확인하며, A/B/C반 간 성적 분포를 나란히 비교할 수 있다
@@ -82,5 +82,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 2/2 | Complete | 2026-02-22 |
 | 2. Core Dashboard | 2/2 | Complete    | 2026-02-22 |
-| 3. Learning Outcomes | 1/2 | In progress | - |
+| 3. Learning Outcomes | 2/2 | Complete | 2026-02-23 |
 | 4. Student Lookup and Class Comparison | 0/TBD | Not started | - |
