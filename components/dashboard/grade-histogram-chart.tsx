@@ -61,9 +61,9 @@ export function GradeHistogramChart({ data, cutlines }: GradeHistogramChartProps
         <CardTitle>반별 성적 분포</CardTitle>
       </CardHeader>
       <CardContent>
-        {/* h-[350px]로 차트 높이 고정 — ResponsiveContainer가 너비 100% 대응 */}
-        <div className="h-[350px]">
-          <ResponsiveContainer width="100%" height="100%">
+        {/* 차트 높이 고정 — ResponsiveContainer에 직접 높이 지정하여 -1 경고 방지 */}
+        <div>
+          <ResponsiveContainer width="100%" height={350}>
             <BarChart
               data={data}
               margin={{ top: 20, right: 20, left: 0, bottom: 5 }}

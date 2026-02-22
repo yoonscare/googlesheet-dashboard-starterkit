@@ -26,13 +26,13 @@ export function GradeKpiCards({ kpi }: GradeKpiCardsProps) {
       title: '총 학생 수',
       value: `${kpi.totalStudents}명`,
       icon: Users,
-      description: classAvgText,
+      description: '전체 등록 학생',
     },
     {
       title: '전체 평균',
       value: `${kpi.overallAverage}점`,
       icon: BarChart3,
-      description: '전체 학생 총점 평균',
+      description: `반별 — ${classAvgText}`,
     },
     {
       title: '최고점',
