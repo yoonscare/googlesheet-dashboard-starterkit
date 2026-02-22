@@ -71,7 +71,10 @@ Plans:
   2. 전체 학생 순위 차트에서 총점 기준 순위와 40% 컷라인 경계선이 시각적으로 표시된다
   3. A반·B반·C반의 평균·분포를 나란히 비교하는 차트를 확인할 수 있다
   4. 핵심간호술(100점 만점 별도 평가) 점수가 총점과 분리되어 독립적으로 표시된다
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 04-01-PLAN.md — 학생 검색/필터 테이블 + 순위 차트 + /students 페이지
+- [ ] 04-02-PLAN.md — 반별 비교 차트 + 핵심간호술 별도 섹션 + /class-comparison 페이지
 
 ## Progress
 
@@ -83,4 +86,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Data Foundation | 2/2 | Complete | 2026-02-22 |
 | 2. Core Dashboard | 2/2 | Complete    | 2026-02-22 |
 | 3. Learning Outcomes | 2/2 | Complete | 2026-02-23 |
-| 4. Student Lookup and Class Comparison | 0/TBD | Not started | - |
+| 4. Student Lookup and Class Comparison | 0/2 | Not started | - |
