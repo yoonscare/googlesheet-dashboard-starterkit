@@ -7,7 +7,7 @@ import { parseGradeRow } from './grade-parser';
 import { mockGradeData, getMockForClass } from './mock-grade-data';
 
 // 데이터 범위: 4행부터 끝까지 (헤더 3행 제외)
-const DATA_RANGE = 'A4:AD';
+const DATA_RANGE = 'A4:AJ';
 
 // ---------------------------------------------------------------------------
 // 반별 파싱 헬퍼
